@@ -118,15 +118,17 @@ Idea ──► PRD ──► TDD ──► C4 ──► Specs ──► CLAUDE.m
 
 ### Transformation Table
 
-| # | Transition | Prompt | Output |
-|---|------------|--------|--------|
-| 1 | Idea → PRD | `prompt-idea-to-prd.md` | Product Requirements Document |
-| 2 | PRD → TDD | `prompt-prd-to-tdd.md` | Technical Design Document |
-| 3 | TDD → C4 | `prompt-tdd-to-c4.md` | Architecture Diagrams |
-| 4 | TDD → API Spec | `prompt-to-api-spec.md` | API/CLI Specification |
-| 5 | PRD+TDD → Tests | `prompt-to-test-spec.md` | Test Specification |
-| 6 | All → Context | `prompt-to-claude-md.md` | CLAUDE.md for Claude Code |
-| 7 | Decision → ADR | `prompt-to-adr.md` | Architectural Decision Record |
+| # | Transition | Prompt | Output | Required |
+|---|------------|--------|--------|----------|
+| 1 | Idea → PRD | `prompt-idea-to-prd.md` | Product Requirements Document | ✅ Yes |
+| 2 | PRD → TDD | `prompt-prd-to-tdd.md` | Technical Design Document | ✅ Yes |
+| 3 | TDD → C4 | `prompt-tdd-to-c4.md` | Architecture Diagrams | ⚪ Optional |
+| 4 | TDD → API Spec | `prompt-to-api-spec.md` | API/CLI Specification | ⚪ Optional |
+| 5 | PRD+TDD → Tests | `prompt-to-test-spec.md` | Test Specification | ⚪ Optional |
+| 6 | All → Context | `prompt-to-claude-md.md` | CLAUDE.md for Claude Code | ✅ Yes |
+| 7 | Decision → ADR | `prompt-to-adr.md` | Architectural Decision Record | ⚪ Optional |
+
+**Minimum viable flow:** Idea → PRD → TDD → CLAUDE.md → Code
 
 ---
 
@@ -250,13 +252,13 @@ This kit evolves in 3 stages:
 | 2 | Agentic | 🔜 Next | Autonomous agents in parallel |
 | 3 | Agent-Ready | 🔮 Future | Software designed for agents |
 
-→ [View Full Roadmap](./ROADMAP.md)
+→ [View Full Roadmap](spec2prod/ROADMAP.md)
 
 ---
 
 ## 🤝 Contributing
 
-Contributions welcome! See [CONTRIBUTING.md](./CONTRIBUTING.md)
+Contributions welcome! See [CONTRIBUTING.md](spec2prod/CONTRIBUTING.md)
 
 Areas where you can help:
 - 🟢 Improve existing documentation

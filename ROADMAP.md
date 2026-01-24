@@ -10,11 +10,11 @@
 ┌─────────────────────────────────────────────────────────────────────────┐
 │                                                                         │
 │   STAGE 1              STAGE 2              STAGE 3                     │
-│   AI Native    ───►    Agentic     ───►    Agent-Ready                 │
+│   AI Native    ───►    Agentic     ───►    Agent-Ready                  │
 │   Development          Development          Development                 │
 │                                                                         │
-│   "AI as               "Autonomous          "Software designed         │
-│    pair programmer"     agents"              for agents"               │
+│   "AI as               "Autonomous          "Software designed          │
+│    pair programmer"     agents"              for agents"                │
 │                                                                         │
 │   ✅ CURRENT           🔜 NEXT              🔮 FUTURE                   │
 │                                                                         │
