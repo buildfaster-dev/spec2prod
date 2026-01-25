@@ -67,7 +67,8 @@ cp -r 00-prompts/ my-new-project/
 │   ├── prompt-to-api-spec.md      # TDD → API Spec
 │   ├── prompt-to-test-spec.md     # PRD+TDD → Test Spec
 │   ├── prompt-to-claude-md.md     # All → CLAUDE.md
-│   └── prompt-to-adr.md           # Decision → ADR
+│   ├── prompt-to-adr.md           # Decision → ADR
+│   └── prompt-refinement.md       # 🔧 Modify specific sections
 │
 ├── 01-product/              # 📋 Product & Architecture
 │   ├── PRD.md                     # Product Requirements
@@ -127,6 +128,7 @@ Idea ──► PRD ──► TDD ──► C4 ──► Specs ──► CLAUDE.m
 | 5 | PRD+TDD → Tests | `prompt-to-test-spec.md` | Test Specification | ⚪ Optional |
 | 6 | All → Context | `prompt-to-claude-md.md` | CLAUDE.md for Claude Code | ✅ Yes |
 | 7 | Decision → ADR | `prompt-to-adr.md` | Architectural Decision Record | ⚪ Optional |
+| 🔧 | Doc → Doc | `prompt-refinement.md` | Modified Document | Utility |
 
 **Minimum viable flow:** Idea → PRD → TDD → CLAUDE.md → Code
 
