@@ -139,12 +139,17 @@ Idea ──► PRD ──► TDD ──► C4 ──► Specs ──► CLAUDE.m
 Each prompt in `00-prompts/` transforms one document into another:
 
 ```bash
-# 1. Open Claude (claude.ai or Claude Code)
-# 2. Copy the prompt content
-# 3. Replace [PASTE HERE] with your document
+# 1. Open a NEW conversation in Claude (to avoid context bleeding)
+# 2. Copy the Prompt section (inside the ```markdown``` block)
+# 3. Replace [PLACEHOLDERS] with your content
 # 4. Execute
-# 5. Save the result in the corresponding folder
+# 5. Save the output in docs/ (e.g., docs/PRD.md)
+# 6. Save the prompt used in docs/prompts/ (for traceability)
 ```
+
+**Important:**
+- Use a **new conversation** for each prompt to prevent prior context from affecting the output
+- In saved prompts, replace full document content with `[See docs/PRD.md]` to avoid duplication
 
 **Example:**
 
@@ -155,9 +160,9 @@ Act as a senior Product Manager...
 ## Idea
 A task app with AI to decompose complex tasks...
 
-## Context
-- User: Developers learning AI Native
-- Stack: Python + OpenAI SDK
+## Additional Context
+- Target user: Developers learning AI Native
+- Preferred tech stack: Python + OpenAI SDK
 ...
 ```
 
@@ -318,3 +323,4 @@ MIT License - see [LICENSE](./LICENSE)
 *Created to learn specification-driven development. January 2025.*
 
 **Found it useful? ⭐ Star the repo!**
+
