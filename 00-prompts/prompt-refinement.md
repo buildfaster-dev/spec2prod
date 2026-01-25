@@ -43,23 +43,52 @@ Return the COMPLETE document with ONLY the specified section modified. Do not ch
 PRD
 
 ## Current Document
-# Product Requirements Document
-## 1. Overview
+# Product Requirements Document (PRD)
+## ChatGPT ToDo App with AI Task Decomposition
 ...
 ## 6. Architecture
 ### 6.1 System Overview
 ...
 ### 6.2 Project Structure
-    old-project/
+    chatgpt-todo-app/
+    ├── README.md
+    ├── requirements.txt
+    ├── pyproject.toml
     ├── src/
-    └── README.md
+    │   ├── __init__.py
+    │   ├── server.py
+    │   ├── tools/
+    │   ├── database/
+    │   └── ui/
+    └── tests/
 ...
 
 ## Section to Modify
 6.2 Project Structure
 
 ## Required Changes
-Add a docs/ folder with subfolders for prompts/ and ADRs/. Add CLAUDE.md at root level.
+Update to this structure:
+    chatgpt-todo-app/
+    ├── docs/
+    │   ├── prompts/              # Prompts used (traceability)
+    │   │   ├── 01-idea-to-prd.md
+    │   │   └── 02-prd-to-tdd.md
+    │   ├── ADRs/                 # Architectural Decision Records
+    │   │   └── ADR-001-xxx.md
+    │   ├── PRD.md                # Generated outputs
+    │   ├── TDD.md
+    │   └── C4-diagrams.md
+    ├── src/                      # Keep existing structure
+    │   ├── __init__.py
+    │   ├── server.py
+    │   ├── tools/
+    │   ├── database/
+    │   └── ui/
+    ├── tests/
+    ├── CLAUDE.md                 # AI context (root level)
+    ├── README.md
+    ├── requirements.txt
+    └── pyproject.toml
 
 ## Output
 Return the COMPLETE document with ONLY the specified section modified. Do not change anything else.
