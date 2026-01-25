@@ -152,4 +152,5 @@ After executing this prompt:
 2. **Document the "why":** Every technical decision should have justification
 3. **Think about the future:** What happens if the scope grows?
 4. **Identify risks:** Better to anticipate them than discover them during implementation
+5. **Own the document:** The generated TDD may include technical concepts you're not familiar with. Use `prompt-refinement.md` to add explanations or simplify sections—don't keep content you don't understand
 
