@@ -88,7 +88,22 @@ A ToDo app that uses AI to suggest how to break down large tasks into more manag
 
 ---
 
+## Output Files
+
+After executing this prompt:
+
+| File | Location | Content |
+|------|----------|---------|
+| PRD | `docs/PRD.md` | The generated PRD |
+| Prompt used | `docs/prompts/01-idea-to-prd.md` | This prompt with your input (without the full PRD) |
+
+**Note:** In the saved prompt, replace the full PRD content with `[See docs/PRD.md]` to avoid duplication.
+
+---
+
 ## Tips
 1. The more context you provide in the input, the better the PRD
 2. Iterate: generate a first version and then refine specific sections
 3. Validate user stories with: "Is this testable?"
+4. The generated PRD may include detailed NFRs (Non-Functional Requirements). For learning projects, consider simplifying with `prompt-refinement.md`
+5. If something in the output doesn't make sense or you didn't ask for it, refine or remove it—you own the document
