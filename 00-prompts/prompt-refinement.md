@@ -50,11 +50,9 @@ PRD
 ### 6.1 System Overview
 ...
 ### 6.2 Project Structure
-```
-old-project/
-├── src/
-└── README.md
-```
+    old-project/
+    ├── src/
+    └── README.md
 ...
 
 ## Section to Modify
