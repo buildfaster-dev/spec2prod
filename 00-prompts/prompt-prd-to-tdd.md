@@ -15,6 +15,8 @@ When you have an approved PRD and need to define the technical architecture and 
 ```markdown
 Act as a Staff Engineer / Software Architect. Transform the following PRD into a Technical Design Document (TDD).
 
+IMPORTANT: This is a new conversation. Do not use any context from previous chats. Only use the information explicitly provided in this prompt.
+
 ## PRD
 [PASTE COMPLETE PRD HERE]
 

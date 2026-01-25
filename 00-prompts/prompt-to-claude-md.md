@@ -17,6 +17,8 @@ When you have all project documentation (PRD, TDD, C4, Specs) and need to genera
 ```markdown
 Act as an expert in AI Native Development and Claude Code. Generate an optimized CLAUDE.md file to serve as the project's main context.
 
+IMPORTANT: This is a new conversation. Do not use any context from previous chats. Only use the information explicitly provided in this prompt.
+
 ## Project Documentation
 [PASTE OR REFERENCE ALL DOCS]
 

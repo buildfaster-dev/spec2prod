@@ -14,6 +14,8 @@ When you have a TDD and need to generate architecture diagrams following the C4 
 ```markdown
 Act as a Software Architect specialized in visual documentation. Generate C4 Model diagrams based on the following Technical Design Document.
 
+IMPORTANT: This is a new conversation. Do not use any context from previous chats. Only use the information explicitly provided in this prompt.
+
 ## TDD
 [PASTE COMPLETE TDD HERE]
 

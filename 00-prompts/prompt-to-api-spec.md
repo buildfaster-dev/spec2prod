@@ -15,6 +15,8 @@ When you have a TDD and need to generate detailed API specifications that serve 
 ```markdown
 Act as an API Designer. Generate detailed API specifications based on the following TDD, following the Spec-Driven Development (SDD) approach.
 
+IMPORTANT: This is a new conversation. Do not use any context from previous chats. Only use the information explicitly provided in this prompt.
+
 ## TDD
 [PASTE TDD HERE]
 

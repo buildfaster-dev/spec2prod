@@ -161,6 +161,37 @@ A task app with AI to decompose complex tasks...
 
 ---
 
+## 📁 Recommended Project Structure
+
+When using spec2prod for your project, keep all documentation **inside your project repository**:
+
+```
+your-project/
+├── docs/
+│   ├── prompts/              # Prompts used (traceability)
+│   │   ├── 01-idea-to-prd.md
+│   │   ├── 02-prd-to-tdd.md
+│   │   └── ...
+│   ├── ADRs/                 # Architectural Decision Records
+│   │   └── ADR-001-xxx.md
+│   ├── PRD.md                # Generated outputs
+│   ├── TDD.md
+│   └── C4-diagrams.md
+├── src/                      # Source code
+├── tests/                    # Tests
+├── CLAUDE.md                 # AI context (root level)
+└── README.md
+```
+
+**Why inside the same repo?**
+
+- CLAUDE.md must be at the root for Claude Code to read it
+- Docs and code evolve together (single git history)
+- One `git clone` = everything needed
+- Documentation describes the software being built
+
+---
+
 ## 🎓 Documentation (Diátaxis)
 
 | Type | File | When to Use |
@@ -252,13 +283,13 @@ This kit evolves in 3 stages:
 | 2 | Agentic | 🔜 Next | Autonomous agents in parallel |
 | 3 | Agent-Ready | 🔮 Future | Software designed for agents |
 
-→ [View Full Roadmap](spec2prod/ROADMAP.md)
+→ [View Full Roadmap](./ROADMAP.md)
 
 ---
 
 ## 🤝 Contributing
 
-Contributions welcome! See [CONTRIBUTING.md](spec2prod/CONTRIBUTING.md)
+Contributions welcome! See [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 Areas where you can help:
 - 🟢 Improve existing documentation

@@ -15,6 +15,8 @@ When you have a product/feature idea and need to convert it into a structured PR
 ```markdown
 Act as a senior Product Manager. Transform the following idea into a structured PRD (Product Requirements Document).
 
+IMPORTANT: This is a new conversation. Do not use any context from previous chats. Only use the information explicitly provided in this prompt.
+
 ## Idea
 [PASTE IDEA HERE]
 

@@ -15,6 +15,8 @@ When you need to document an important technical decision (database, framework, 
 ```markdown
 Act as a Software Architect. Generate an ADR (Architectural Decision Record) for the following technical decision.
 
+IMPORTANT: This is a new conversation. Do not use any context from previous chats. Only use the information explicitly provided in this prompt.
+
 ## Decision
 [DESCRIBE THE DECISION]
 

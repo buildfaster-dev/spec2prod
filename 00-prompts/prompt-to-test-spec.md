@@ -15,6 +15,8 @@ When you have PRD and TDD defined and need to generate test specifications befor
 ```markdown
 Act as a senior QA Engineer / SDET. Generate a comprehensive test specification based on the following documents.
 
+IMPORTANT: This is a new conversation. Do not use any context from previous chats. Only use the information explicitly provided in this prompt.
+
 ## PRD
 [PASTE PRD HERE]
 
