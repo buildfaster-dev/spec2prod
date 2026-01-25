@@ -133,9 +133,23 @@ User Stories: CRUD operations + AI decompose command
 
 ---
 
+## Output Files
+
+After executing this prompt:
+
+| File | Location | Content |
+|------|----------|---------|
+| TDD | `docs/TDD.md` | The generated TDD |
+| Prompt used | `docs/prompts/02-prd-to-tdd.md` | This prompt with your input (without the full PRD) |
+
+**Note:** In the saved prompt, replace the full PRD content with `[See docs/PRD.md]` to avoid duplication.
+
+---
+
 ## Tips
 
 1. **Be specific with the stack:** "Python" is not enough, specify "Python 3.11 + FastAPI 0.104"
 2. **Document the "why":** Every technical decision should have justification
 3. **Think about the future:** What happens if the scope grows?
 4. **Identify risks:** Better to anticipate them than discover them during implementation
+
