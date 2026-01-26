@@ -91,9 +91,24 @@ persistence, want easy setup for new developers. Timeline is 4 weeks.
 
 ---
 
+## Output Files
+
+After executing this prompt:
+
+| File | Location | Content |
+|------|----------|---------|
+| ADR | `docs/ADRs/ADR-XXX-keyword.md` | The generated ADR |
+| Prompt used | `docs/prompts/07-to-adr-XXX.md` | This prompt with your input |
+
+**Naming convention:** Number ADRs sequentially (ADR-001, ADR-002) with a keyword describing the decision.
+
+---
+
 ## Tips
 
 1. **One decision = one ADR:** Don't mix multiple decisions
 2. **Be honest with trade-offs:** ADRs are for future you
 3. **Include the "why not":** As important as the "why yes"
 4. **Update the status:** If a decision changes, don't delete, mark as superseded
+5. **Own the document:** If the generated ADR doesn't capture your reasoning, use `prompt-refinement.md` to adjust
+

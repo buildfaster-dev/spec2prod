@@ -116,9 +116,24 @@ Test cases and coverage targets
 
 ---
 
+## Output Files
+
+After executing this prompt:
+
+| File | Location | Content |
+|------|----------|---------|
+| CLAUDE.md | `CLAUDE.md` (root) | The generated AI context file |
+| Prompt used | `docs/prompts/06-to-claude-md.md` | This prompt with your input |
+
+**Note:** CLAUDE.md must be at the project root for Claude Code to read it automatically.
+
+---
+
 ## Tips
 
 1. **Less is more:** A 100-line useful CLAUDE.md > 500 lines of filler
 2. **Update frequently:** CLAUDE.md should evolve with the code
 3. **Test with Claude:** Ask "what does this project do?" and validate the answer
 4. **Include anti-patterns:** What NOT to do is as useful as what to do
+5. **Own the document:** If the generated CLAUDE.md doesn't capture your project well, use `prompt-refinement.md` to adjust
+

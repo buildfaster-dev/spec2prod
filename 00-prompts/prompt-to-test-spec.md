@@ -105,9 +105,24 @@ CLI commands: add, list, show, complete, delete, decompose
 
 ---
 
+## Output Files
+
+After executing this prompt:
+
+| File | Location | Content |
+|------|----------|---------|
+| Test Spec | `docs/test-spec.md` | The generated test specification |
+| Prompt used | `docs/prompts/05-to-test-spec.md` | This prompt with your input (without full docs) |
+
+**Note:** In the saved prompt, replace full document content with `[See docs/PRD.md]` and `[See docs/TDD.md]` to avoid duplication.
+
+---
+
 ## Tips
 
 1. **Start with happy paths:** Ensure it works before looking for bugs
 2. **One test = one thing:** Each test verifies a single behavior
 3. **Descriptive names:** `test_create_task_with_valid_title_returns_task_with_id`
 4. **Consider maintenance:** Fragile tests are worse than no tests
+5. **Own the document:** If the generated spec doesn't match your testing approach, use `prompt-refinement.md` to adjust
+

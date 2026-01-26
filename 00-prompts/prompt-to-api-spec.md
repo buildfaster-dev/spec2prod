@@ -115,9 +115,24 @@ Commands needed: add, list, show, complete, delete, decompose
 
 ---
 
+## Output Files
+
+After executing this prompt:
+
+| File | Location | Content |
+|------|----------|---------|
+| API Spec | `docs/api-spec.md` | The generated specification |
+| Prompt used | `docs/prompts/04-to-api-spec.md` | This prompt with your input (without the full TDD) |
+
+**Note:** In the saved prompt, replace the full TDD content with `[See docs/TDD.md]` to avoid duplication.
+
+---
+
 ## Tips
 
 1. **Be exhaustive with errors:** A good spec documents what can go wrong
 2. **Real examples:** Don't use "string" as an example, use "Complete API design"
 3. **Consistency:** Same patterns across all endpoints/commands
 4. **Validation first:** Define constraints before implementing
+5. **Own the document:** If the generated spec doesn't match your needs, use `prompt-refinement.md` to adjust specific sections
+
