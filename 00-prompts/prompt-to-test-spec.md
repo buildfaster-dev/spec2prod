@@ -6,14 +6,14 @@ When you have PRD and TDD defined and need to generate test specifications befor
 ## Required Input
 - PRD with user stories and acceptance criteria
 - TDD with technical design
-- API Spec (if exists)
+- Project scope (learning, MVP, production)
 
 ---
 
 ## Prompt
 
 ```markdown
-Act as a senior QA Engineer / SDET. Generate a comprehensive test specification based on the following documents.
+Act as a senior QA Engineer / SDET. Generate a practical test specification based on the following documents.
 
 IMPORTANT: This is a new conversation. Do not use any context from previous chats. Only use the information explicitly provided in this prompt.
 
@@ -23,56 +23,45 @@ IMPORTANT: This is a new conversation. Do not use any context from previous chat
 ## TDD
 [PASTE TDD HERE]
 
-## API Spec (optional)
-[PASTE API SPEC HERE]
+## Project Scope
+- Type: [Learning project | MVP | Production]
+- Timeline: [INDICATE]
+- Team size: [INDICATE]
 
 ## Instructions
 
+Generate a CONCISE test specification. Focus on practical tests that can be implemented within the project timeline. Avoid over-engineering.
+
 ### 1. Test Strategy Overview
-- Types of tests to implement
-- Prioritization (what to test first)
-- Coverage targets
-- Tools and frameworks
+- Testing pyramid (unit > integration > e2e)
+- Coverage target (single number, e.g., "70%")
+- Tools and frameworks (only essential ones)
 
 ### 2. Unit Tests Specification
-For each component/module:
-- Function/method to test
-- Scenarios (happy path, edge cases, errors)
-- Input → Expected output
-- Required mocks
+For each main component, list 3-5 critical test cases:
+- 1-2 happy path
+- 1-2 error cases
+- 1 edge case (if relevant)
 
-Format per test:
-| ID | Description | Input | Expected | Mocks |
-|----|-------------|-------|----------|-------|
+Format:
+| ID | Description | Input | Expected |
+|----|-------------|-------|----------|
 
 ### 3. Integration Tests Specification
-For each integration flow:
-- Components involved
-- Required setup
-- End-to-end scenario
-- Assertions
+List 5-10 integration tests covering the main flows. Focus on happy paths.
 
-### 4. Test Data Requirements
-- Required fixtures
-- Test data
-- Database states
+### 4. Fixtures
+Simple fixtures needed for tests. No factory libraries for learning projects.
 
-### 5. Mock Specifications
-For each external service:
-- What to mock
-- Mock responses (success and error)
-- When to use mock vs real
+### 5. Test Cases per User Story
+For each P0 user story: 2-3 test cases that verify acceptance criteria.
 
-### 6. Test Cases per User Story
-For each PRD user story:
-- Test cases that verify acceptance criteria
-- User Story → Test IDs mapping
-
-## Output Format
-- Structured markdown
-- Tables for test cases
-- Example test code where it helps
-- Executable checklist
+## Output Guidelines
+- Keep document under 300 lines
+- Prefer tables over prose
+- Include 1-2 code examples for reference
+- Skip E2E tests for learning projects
+- Skip CI/CD configuration
 ```
 
 ---
@@ -82,26 +71,26 @@ For each PRD user story:
 **Input:**
 ```
 ## PRD
-AI-Powered ToDo App
+ChatGPT ToDo App
 
-User Stories: US-01 to US-05 (CRUD + AI decompose)
+User Stories: US-01 to US-07 (CRUD + AI decompose)
 Acceptance criteria defined for each story
 [... rest of PRD content ...]
 
 ## TDD
-Components: TaskService, AIService, TaskRepository
-External: OpenAI API (needs mocking)
-Coverage target: 70%
+Components: Tools Layer, Database Layer, UI Components
+External: ChatGPT via MCP Protocol
 [... rest of TDD content ...]
 
-## API Spec (optional)
-CLI commands: add, list, show, complete, delete, decompose
-[... or leave empty if not available ...]
+## Project Scope
+- Type: Learning project
+- Timeline: 4 weeks
+- Team size: 1 developer
 ```
 
-**How to use:** Copy the Prompt section above, then replace `[PASTE PRD HERE]` with your PRD, `[PASTE TDD HERE]` with your TDD, and optionally `[PASTE API SPEC HERE]` if you have one.
+**How to use:** Copy the Prompt section above, then replace `[PASTE PRD HERE]` with your PRD, `[PASTE TDD HERE]` with your TDD, and fill in the Project Scope.
 
-**Expected output:** Test specification with 40+ test cases, fixtures, mock specifications, and user story to test mapping.
+**Expected output:** Concise test specification (~200-300 lines) with ~30 test cases covering critical paths.
 
 ---
 
@@ -124,5 +113,5 @@ After executing this prompt:
 2. **One test = one thing:** Each test verifies a single behavior
 3. **Descriptive names:** `test_create_task_with_valid_title_returns_task_with_id`
 4. **Consider maintenance:** Fragile tests are worse than no tests
-5. **Own the document:** If the generated spec doesn't match your testing approach, use `prompt-refinement.md` to adjust
-
+5. **Match project scope:** A learning project needs ~30 tests, not 100+
+6. **Own the document:** If the generated spec is too verbose, use `prompt-refinement.md` to simplify
