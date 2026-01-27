@@ -6,9 +6,9 @@ When you have all project documentation (PRD, TDD, C4, Specs) and need to genera
 ## Required Input
 - Complete PRD
 - Complete TDD
-- API Spec
-- Data Model
-- Any relevant ADRs
+- Test Spec (if available)
+- API Spec (if separate from TDD)
+- ADRs (if separate from TDD)
 
 ---
 
@@ -90,22 +90,14 @@ The CLAUDE.md should be **concise but complete**. Claude Code will read it at th
 ## Project Documentation
 
 ### PRD.md
-AI-Powered ToDo App - User stories, requirements
+ChatGPT ToDo App - User stories, requirements
 [... PRD content or reference ...]
 
 ### TDD.md
-Architecture, components, data model
+Architecture, components, data model, API design, ADRs
 [... TDD content or reference ...]
 
-### api-spec.md
-CLI commands: add, list, show, complete, delete, decompose
-[... API spec content or reference ...]
-
-### data-model.md
-Task entity with fields and relationships
-[... data model content or reference ...]
-
-### test-spec.md
+### test-spec.md (optional)
 Test cases and coverage targets
 [... test spec content or reference ...]
 ```
