@@ -20,7 +20,18 @@ Act as an expert in AI Native Development and Claude Code. Generate an optimized
 IMPORTANT: This is a new conversation. Do not use any context from previous chats. Only use the information explicitly provided in this prompt.
 
 ## Project Documentation
-[PASTE OR REFERENCE ALL DOCS]
+
+### PRD
+[PASTE PRD HERE]
+
+### TDD
+[PASTE TDD HERE]
+
+### Test Spec (optional)
+[PASTE TEST SPEC HERE OR REMOVE THIS SECTION]
+
+### API Spec (optional, if separate from TDD)
+[PASTE API SPEC HERE OR REMOVE THIS SECTION]
 
 ## Instructions
 
@@ -87,22 +98,23 @@ The CLAUDE.md should be **concise but complete**. Claude Code will read it at th
 
 **Input:**
 ```
-## Project Documentation
+### PRD
+# Product Requirements Document
+ChatGPT ToDo App - User stories, requirements...
+[... full PRD content ...]
 
-### PRD.md
-ChatGPT ToDo App - User stories, requirements
-[... PRD content or reference ...]
+### TDD
+# Technical Design Document
+Architecture, components, data model, API design, ADRs...
+[... full TDD content ...]
 
-### TDD.md
-Architecture, components, data model, API design, ADRs
-[... TDD content or reference ...]
-
-### test-spec.md (optional)
-Test cases and coverage targets
-[... test spec content or reference ...]
+### Test Spec (optional)
+# Test Specification
+Test cases and coverage targets...
+[... full test spec content ...]
 ```
 
-**How to use:** Copy the Prompt section above, then replace `[PASTE OR REFERENCE ALL DOCS]` with your project documentation. You can either paste the full content or provide file references if using Claude Code.
+**How to use:** Copy the Prompt section above, then replace `[PASTE PRD HERE]` with your PRD, `[PASTE TDD HERE]` with your TDD, and optionally add Test Spec or API Spec. Remove optional sections you don't have.
 
 **Expected output:** A concise CLAUDE.md (200-300 lines) with project overview, ASCII architecture, directory structure, commands, and code patterns.
 
