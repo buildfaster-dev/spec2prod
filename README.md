@@ -24,35 +24,33 @@ A complete set of documents that allow you to:
 
 ## 🚀 Quick Start
 
-### Option A: Use the Full Kit
+### Option A: Start a New Project
 
 ```bash
-# Clone
+# Clone spec2prod
+git clone https://github.com/[your-username]/spec2prod.git
+
+# Copy prompts to your project
+cp -r spec2prod/00-prompts/ my-new-project/docs/
+
+# Follow the transformation flow
+# Start with prompt-idea-to-prd.md
+```
+
+### Option B: Learn First
+
+```bash
+# Clone and read the tutorial
 git clone https://github.com/[your-username]/spec2prod.git
 cd spec2prod
 
 # Go to tutorial
-open 04-guides/tutorial-first-session.md
+open 01-guides/tutorial-claude-code-setup.md
 ```
 
-### Option B: Just the Context for Claude Code
+### Option C: See a Real Example
 
-```bash
-# Copy to your existing project
-cp -r 03-ai-context/* your-project/
-cd your-project
-claude
-```
-
-### Option C: Start from Scratch
-
-```bash
-# 1. Copy only the prompts
-cp -r 00-prompts/ my-new-project/
-
-# 2. Write your idea and use prompt-idea-to-prd.md
-# 3. Follow the transformation flow
-```
+Check [chatgpt-todo-app](https://github.com/jyr-at-bft/chatgpt-todo-app) - a complete project built using spec2prod.
 
 ---
 
@@ -70,32 +68,14 @@ cp -r 00-prompts/ my-new-project/
 │   ├── prompt-to-adr.md           # Decision → ADR
 │   └── prompt-refinement.md       # 🔧 Modify specific sections
 │
-├── 01-product/              # 📋 Product & Architecture
-│   ├── PRD.md                     # Product Requirements
-│   ├── TDD.md                     # Technical Design
-│   ├── C4-diagrams.md             # Architecture diagrams
-│   └── ADRs/                      # Decision Records
-│       └── ADR-001-sqlite.md
-│
-├── 02-specs/                # 📝 Specifications
-│   ├── api-spec.md                # CLI/API specification
-│   ├── data-model.md              # Database schema
-│   └── test-spec.md               # Test cases
-│
-├── 03-ai-context/           # 🤖 Context for Claude Code
-│   ├── CLAUDE.md                  # Main context file
-│   └── .claude/
-│       └── commands/              # Custom slash commands
-│           ├── implement.md
-│           ├── test.md
-│           └── fix.md
-│
-└── 04-guides/               # 📚 Documentation (Diátaxis)
-    ├── tutorial-first-session.md  # Learn by doing
+└── 01-guides/               # 📚 Documentation (Diátaxis)
+    ├── tutorial-claude-code-setup.md  # Learn by doing
     ├── howto-recipes.md           # Specific tasks
     ├── reference-cheatsheet.md    # Quick reference
     └── explanation-pdd.md         # Understand PDD flow
 ```
+
+**Real-world example:** [chatgpt-todo-app](https://github.com/jyr-at-bft/chatgpt-todo-app) - A complete project built using spec2prod prompts.
 
 ---
 
@@ -203,7 +183,7 @@ your-project/
 
 | Type | File | When to Use |
 |------|------|-------------|
-| **Tutorial** | `tutorial-first-session.md` | First time, want to learn by doing |
+| **Tutorial** | `tutorial-claude-code-setup.md` | First time, want to learn by doing |
 | **How-To** | `howto-recipes.md` | Have a specific task to solve |
 | **Reference** | `reference-cheatsheet.md` | Need quick lookup |
 | **Explanation** | `explanation-pdd.md` | Want to understand the full PDD flow |
@@ -212,30 +192,28 @@ your-project/
 
 ## 🛠️ For Your Own Project
 
-### Option A: Use as Template
+### Option A: Use the Prompts
 
 ```bash
-# Copy the entire structure
-cp -r spec2prod/ my-new-project/
-cd my-new-project/
+# Copy prompts to your project
+cp -r spec2prod/00-prompts/ my-project/docs/prompts/
 
-# Edit documents for your project
-# Start with PRD.md
-```
-
-### Option B: Just the AI Context
-
-```bash
-# Copy only what Claude needs
-cp -r 03-ai-context/* my-project/
-```
-
-### Option C: Just the Prompts
-
-```bash
-# Use prompts to generate docs from scratch
 # Start with prompt-idea-to-prd.md
+# Follow the transformation flow
 ```
+
+### Option B: Follow the Tutorial
+
+```bash
+# Read the tutorial first
+open spec2prod/01-guides/tutorial-claude-code-setup.md
+
+# Then apply to your project
+```
+
+### Option C: See a Real Example
+
+Study [chatgpt-todo-app](https://github.com/jyr-at-bft/chatgpt-todo-app) to see how a complete project uses spec2prod.
 
 ---
 
@@ -323,4 +301,5 @@ MIT License - see [LICENSE](./LICENSE)
 *Created to learn specification-driven development. January 2025.*
 
 **Found it useful? ⭐ Star the repo!**
+
 
