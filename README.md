@@ -69,10 +69,12 @@ Check [chatgpt-todo-app](https://github.com/jyr-at-bft/chatgpt-todo-app) - a com
 │   └── prompt-refinement.md       # 🔧 Modify specific sections
 │
 └── 01-guides/               # 📚 Documentation (Diátaxis)
-    ├── tutorial-claude-code-setup.md  # Learn by doing
-    ├── howto-recipes.md           # Specific tasks
-    ├── reference-cheatsheet.md    # Quick reference
-    └── explanation-pdd.md         # Understand PDD flow
+    ├── tutorial-claude-code-setup.md  # First task with Claude Code
+    ├── tutorial-01-dependencies.md    # Setup dependencies
+    ├── tutorial-02-configuration.md   # Configuration (coming soon)
+    ├── howto-recipes.md               # Specific tasks
+    ├── reference-cheatsheet.md        # Quick reference
+    └── explanation-pdd.md             # Understand PDD flow
 ```
 
 **Real-world example:** [chatgpt-todo-app](https://github.com/jyr-at-bft/chatgpt-todo-app) - A complete project built using spec2prod prompts.
@@ -183,7 +185,8 @@ your-project/
 
 | Type | File | When to Use |
 |------|------|-------------|
-| **Tutorial** | `tutorial-claude-code-setup.md` | First time, want to learn by doing |
+| **Tutorial** | `tutorial-claude-code-setup.md` | First task with Claude Code |
+| **Tutorial** | `tutorial-01-dependencies.md` | Setup project dependencies |
 | **How-To** | `howto-recipes.md` | Have a specific task to solve |
 | **Reference** | `reference-cheatsheet.md` | Need quick lookup |
 | **Explanation** | `explanation-pdd.md` | Want to understand the full PDD flow |
@@ -301,5 +304,3 @@ MIT License - see [LICENSE](./LICENSE)
 *Created to learn specification-driven development. January 2025.*
 
 **Found it useful? ⭐ Star the repo!**
-
-
