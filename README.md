@@ -71,7 +71,8 @@ Check [chatgpt-todo-app](https://github.com/jyr-at-bft/chatgpt-todo-app) - a com
 └── 01-guides/               # 📚 Documentation (Diátaxis)
     ├── tutorial-claude-code-setup.md  # First task with Claude Code
     ├── tutorial-01-dependencies.md    # Setup dependencies
-    ├── tutorial-02-configuration.md   # Configuration (coming soon)
+    ├── tutorial-02-configuration.md   # Configuration management
+    ├── tutorial-03-database.md        # Database layer
     ├── howto-recipes.md               # Specific tasks
     ├── reference-cheatsheet.md        # Quick reference
     └── explanation-pdd.md             # Understand PDD flow
@@ -187,6 +188,8 @@ your-project/
 |------|------|-------------|
 | **Tutorial** | `tutorial-claude-code-setup.md` | First task with Claude Code |
 | **Tutorial** | `tutorial-01-dependencies.md` | Setup project dependencies |
+| **Tutorial** | `tutorial-02-configuration.md` | Configuration management |
+| **Tutorial** | `tutorial-03-database.md` | Database layer |
 | **How-To** | `howto-recipes.md` | Have a specific task to solve |
 | **Reference** | `reference-cheatsheet.md` | Need quick lookup |
 | **Explanation** | `explanation-pdd.md` | Want to understand the full PDD flow |

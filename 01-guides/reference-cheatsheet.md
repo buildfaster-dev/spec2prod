@@ -44,6 +44,8 @@
 01-guides/               # Guides (Diátaxis)
 ├── tutorial-claude-code-setup.md
 ├── tutorial-01-dependencies.md
+├── tutorial-02-configuration.md
+├── tutorial-03-database.md
 ├── howto-recipes.md
 ├── reference-cheatsheet.md
 └── explanation-pdd.md
