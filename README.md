@@ -50,7 +50,7 @@ open 01-guides/tutorial-claude-code-setup.md
 
 ### Option C: See a Real Example
 
-Check [chatgpt-todo-app](https://github.com/jyr-at-bft/chatgpt-todo-app) - a complete project built using spec2prod.
+Check [chatgpt-todo-app](https://github.com/buildfaster-dev/chatgpt-todo-app) - a complete project built using spec2prod.
 
 ---
 
@@ -78,7 +78,7 @@ Check [chatgpt-todo-app](https://github.com/jyr-at-bft/chatgpt-todo-app) - a com
     └── explanation-pdd.md             # Understand PDD flow
 ```
 
-**Real-world example:** [chatgpt-todo-app](https://github.com/jyr-at-bft/chatgpt-todo-app) - A complete project built using spec2prod prompts.
+**Real-world example:** [chatgpt-todo-app](https://github.com/buildfaster-dev/chatgpt-todo-app) - A complete project built using spec2prod prompts.
 
 ---
 
@@ -219,7 +219,7 @@ open spec2prod/01-guides/tutorial-claude-code-setup.md
 
 ### Option C: See a Real Example
 
-Study [chatgpt-todo-app](https://github.com/jyr-at-bft/chatgpt-todo-app) to see how a complete project uses spec2prod.
+Study [chatgpt-todo-app](https://github.com/buildfaster-dev/chatgpt-todo-app) to see how a complete project uses spec2prod.
 
 ---
 
