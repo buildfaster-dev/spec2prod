@@ -46,6 +46,9 @@
 ├── tutorial-01-dependencies.md
 ├── tutorial-02-configuration.md
 ├── tutorial-03-database.md
+├── tutorial-04-tools.md
+├── tutorial-05-ui.md
+├── tutorial-06-server.md
 ├── howto-recipes.md
 ├── reference-cheatsheet.md
 └── explanation-pdd.md
