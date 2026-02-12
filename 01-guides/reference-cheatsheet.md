@@ -49,6 +49,7 @@
 ├── tutorial-04-tools.md
 ├── tutorial-05-ui.md
 ├── tutorial-06-server.md
+├── tutorial-07-tests.md
 ├── howto-recipes.md
 ├── reference-cheatsheet.md
 └── explanation-pdd.md
