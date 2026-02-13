@@ -178,6 +178,15 @@ Break down "Plan birthday party" into subtasks
 
 ## Common Issues
 
+### "context canceled" errors in Cloudflare tunnel
+
+```
+ERR error="context canceled" connIndex=0 event=1 ingressRule=0 originService=http://localhost:8000
+ERR failed to serve incoming request error="Failed to proxy HTTP: context canceled"
+```
+
+This is normal. It happens when ChatGPT closes the connection before the server finishes responding. It doesn't affect functionality.
+
 ### Cloudflare URL changes every restart
 
 Quick tunnels give random URLs. For persistent URLs:
