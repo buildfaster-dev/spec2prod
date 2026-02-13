@@ -50,6 +50,7 @@
 ├── tutorial-05-ui.md
 ├── tutorial-06-server.md
 ├── tutorial-07-tests.md
+├── tutorial-08-local-testing.md
 ├── howto-recipes.md
 ├── reference-cheatsheet.md
 └── explanation-pdd.md

@@ -77,6 +77,7 @@ Check [chatgpt-todo-app](https://github.com/buildfaster-dev/chatgpt-todo-app) - 
     ├── tutorial-05-ui.md              # UI components
     ├── tutorial-06-server.md          # Server
     ├── tutorial-07-tests.md           # Integration tests
+    ├── tutorial-08-local-testing.md   # Local testing with ChatGPT
     ├── howto-recipes.md               # Specific tasks
     ├── reference-cheatsheet.md        # Quick reference
     └── explanation-pdd.md             # Understand PDD flow
@@ -198,6 +199,7 @@ your-project/
 | **Tutorial** | `tutorial-05-ui.md` | UI components |
 | **Tutorial** | `tutorial-06-server.md` | Server |
 | **Tutorial** | `tutorial-07-tests.md` | Integration tests |
+| **Tutorial** | `tutorial-08-local-testing.md` | Local testing with ChatGPT |
 | **How-To** | `howto-recipes.md` | Have a specific task to solve |
 | **Reference** | `reference-cheatsheet.md` | Need quick lookup |
 | **Explanation** | `explanation-pdd.md` | Want to understand the full PDD flow |

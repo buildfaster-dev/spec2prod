@@ -223,4 +223,4 @@ Fix only the errors in src/server.py and src/tools/
 
 ## Next
 
-Continue with [tutorial-08-production.md](./tutorial-08-production.md)
+Continue with [tutorial-08-local-testing.md](./tutorial-08-local-testing.md)
